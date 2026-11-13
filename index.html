@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>-- Student Registration --</title>
+  </head>
+  <body>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(
+          180deg,
+          #0a2540 0%,
+          #0d4638 60%,
+          #0d5c3a 100%
+        );
+      }
+      .header {
+        text-align: center;
+        margin-bottom: 15px;
+      }
+      .header h2 {
+        font-size: 20px;
+        color: blue;
+      }
+      .header p {
+        margin-top: 10px;
+        font-size: 12px;
+      }
+      .big-box {
+        padding: 10px;
+        background-color: #7d8893;
+      }
+      .box {
+        background-color: whitesmoke;
+        padding: 10px;
+      }
+      input {
+        border: none;
+        background-color: rgba(0, 0, 0, 0.358);
+        padding: 8px 40px;
+        cursor: pointer;
+      }
+      .register {
+        text-align: center;
+      }
+      .register p {
+        margin-top: -5px;
+        font-size: 12px;
+      }
+      button {
+        cursor: pointer;
+        background-color: blue;
+        border: none;
+        padding: 15px 100px;
+        border-radius: 13px;
+      }
+      input:focus {
+        background-color: azure;
+      }
+      .form {
+        margin: 10px;
+      }
+      label {
+        font-size: 12px;
+        font-weight: bold;
+      }
+      .full-name {
+        margin-bottom: 9px;
+      }
+      .email-address {
+        margin-bottom: 9px;
+      }
+      .password {
+        margin-bottom: 9px;
+      }
+      .date {
+        margin-bottom: 9px;
+      }
+      .course {
+        margin-bottom: 9px;
+      }
+      .address {
+        margin-bottom: 9px;
+      }
+      .gender {
+        display: flex;
+        margin-bottom: 9px;
+        gap: 20px;
+      }
+    </style>
+    <div class="big-box">
+      <div class="box">
+        <div class="header">
+          <h2>Student Registration</h2>
+          <p>Please fill in the information below.</p>
+        </div>
+        <div class="form">
+          <form action="#" method="post">
+            <div class="full-name">
+              <label for="fullname">Fullname <br /></label>
+              <input type="text" name="fullname" required />
+            </div>
+            <div class="email-address">
+              <label for="email">Email Address <br /></label>
+              <input type="email" name="email" required />
+            </div>
+            <div class="password">
+              <label for="password">Password <br /></label>
+              <input type="password" name="password" required />
+            </div>
+            <div class="date">
+              <label for="date">Date of Birth <br /></label>
+              <input type="date" name="date" required />
+            </div>
+            <div class="phone-number">
+              <label for="phone-number">Phone Number <br /></label>
+              <input type="text" name="phone-number" required />
+            </div>
+            <div class="course">
+              <label for="course">Course <br /></label>
+              <select name="course" required>
+                <option value="html">HTML Course</option>
+                <option value="css">CSS Course</option>
+                <option value="js">JavaScript Course</option>
+              </select>
+            </div>
+            <div class="address">
+              <label for="address">Address <br /></label>
+              <input type="text" name="address" required />
+            </div>
+            <div class="gender">
+                <div>
+                    <label for="gender">Gender <br /></label>
+              <input type="radio" name="gender" />
+              <label for="male">Male</label>
+                </div>
+                <div style="margin-top: 19px;">
+                    <input type="radio" name="gender" />
+              <label for="female">Female</label>
+                </div>
+            </div>
+            <div class="register">
+              <button type="submit">Register</button>
+              <br />
+              <br />
+              <p>
+                Already have an account? <span style="color: blue; cursor: pointer;">Login</span>
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
